@@ -1,0 +1,1064 @@
+[2019-08-21 13:18:18.593] [INFO] PgService - SSL to Postgresql disabled
+[2019-08-21 13:18:18.594] [INFO] PgService - connecting to Postgresql postgres://sanket:******@127.0.0.1:5432/fabricexplorer
+[2019-08-21 13:18:18.597] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2019-08-21 13:18:23.737] [INFO] PgService - SSL to Postgresql disabled
+[2019-08-21 13:18:23.737] [INFO] PgService - connecting to Postgresql postgres://sanket:******@127.0.0.1:5432/fabricexplorer
+[2019-08-21 13:18:23.738] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2019-08-21 13:18:31.815] [INFO] PgService - SSL to Postgresql disabled
+[2019-08-21 13:18:31.815] [INFO] PgService - connecting to Postgresql postgres://sanket:******@127.0.0.1:5432/fabricexplorer
+[2019-08-21 13:18:31.816] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2019-08-21 13:18:32.978] [INFO] PgService - SSL to Postgresql disabled
+[2019-08-21 13:18:32.978] [INFO] PgService - connecting to Postgresql postgres://sanket:******@127.0.0.1:5432/fabricexplorer
+[2019-08-21 13:18:32.979] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2019-08-21 14:37:58.189] [INFO] PgService - SSL to Postgresql disabled
+[2019-08-21 14:37:58.190] [INFO] PgService - connecting to Postgresql postgres://sanket_pai:******@localhost:5432/fabricexplorer
+[2019-08-21 14:37:58.194] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2019-08-21 14:38:03.194] [INFO] PgService - SSL to Postgresql disabled
+[2019-08-21 14:38:03.194] [INFO] PgService - connecting to Postgresql postgres://sanket_pai:******@localhost:5432/fabricexplorer
+[2019-08-21 14:38:03.195] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2019-08-21 14:38:04.710] [DEBUG] PgService -  the getRowsBySQlCase  select * from channel where name='mychannel' and channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:04.711] [DEBUG] PgService -  the getRowsBySQlCase  select count(1) from channel where name='mychannel' 
+[2019-08-21 14:38:04.712] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from channel where name='mychannel' and channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:04.712] [DEBUG] PgService - Insert sql is INSERT INTO channel  ( "name","createdt","blocks","trans","channel_hash","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6  ) RETURNING *;
+[2019-08-21 14:38:04.720] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.720] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.752] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer0.org1.example.com' 
+[2019-08-21 14:38:04.752] [DEBUG] PgService - Insert sql is INSERT INTO peer  ( "mspid","requests","events","server_hostname","channel_genesis_hash","peer_type" ) VALUES( $1,$2,$3,$4,$5,$6  ) RETURNING *;
+[2019-08-21 14:38:04.762] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.762] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.763] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:04.763] [DEBUG] PgService - Insert sql is INSERT INTO peer_ref_channel  ( "peerid","channelid" ) VALUES( $1,$2  ) RETURNING *;
+[2019-08-21 14:38:04.770] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.770] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.771] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer2.org1.example.com' 
+[2019-08-21 14:38:04.771] [DEBUG] PgService - Insert sql is INSERT INTO peer  ( "mspid","requests","events","server_hostname","channel_genesis_hash","peer_type" ) VALUES( $1,$2,$3,$4,$5,$6  ) RETURNING *;
+[2019-08-21 14:38:04.779] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.779] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.779] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer2.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:04.779] [DEBUG] PgService - Insert sql is INSERT INTO peer_ref_channel  ( "peerid","channelid" ) VALUES( $1,$2  ) RETURNING *;
+[2019-08-21 14:38:04.787] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.787] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.788] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer1.org1.example.com' 
+[2019-08-21 14:38:04.788] [DEBUG] PgService - Insert sql is INSERT INTO peer  ( "mspid","requests","events","server_hostname","channel_genesis_hash","peer_type" ) VALUES( $1,$2,$3,$4,$5,$6  ) RETURNING *;
+[2019-08-21 14:38:04.795] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.796] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.796] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer1.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:04.796] [DEBUG] PgService - Insert sql is INSERT INTO peer_ref_channel  ( "peerid","channelid" ) VALUES( $1,$2  ) RETURNING *;
+[2019-08-21 14:38:04.804] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.804] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.804] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer0.org2.example.com' 
+[2019-08-21 14:38:04.805] [DEBUG] PgService - Insert sql is INSERT INTO peer  ( "mspid","requests","events","server_hostname","channel_genesis_hash","peer_type" ) VALUES( $1,$2,$3,$4,$5,$6  ) RETURNING *;
+[2019-08-21 14:38:04.812] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.812] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.813] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.org2.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:04.813] [DEBUG] PgService - Insert sql is INSERT INTO peer_ref_channel  ( "peerid","channelid" ) VALUES( $1,$2  ) RETURNING *;
+[2019-08-21 14:38:04.820] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.821] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.822] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer.example.com' 
+[2019-08-21 14:38:04.822] [DEBUG] PgService - Insert sql is INSERT INTO peer  ( "mspid","requests","server_hostname","channel_genesis_hash","peer_type" ) VALUES( $1,$2,$3,$4,$5  ) RETURNING *;
+[2019-08-21 14:38:04.829] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.829] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.829] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:04.829] [DEBUG] PgService - Insert sql is INSERT INTO peer_ref_channel  ( "peerid","channelid" ) VALUES( $1,$2  ) RETURNING *;
+[2019-08-21 14:38:04.837] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.837] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.838] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer2.example.com' 
+[2019-08-21 14:38:04.838] [DEBUG] PgService - Insert sql is INSERT INTO peer  ( "mspid","requests","server_hostname","channel_genesis_hash","peer_type" ) VALUES( $1,$2,$3,$4,$5  ) RETURNING *;
+[2019-08-21 14:38:04.845] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.846] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.846] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer2.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:04.846] [DEBUG] PgService - Insert sql is INSERT INTO peer_ref_channel  ( "peerid","channelid" ) VALUES( $1,$2  ) RETURNING *;
+[2019-08-21 14:38:04.854] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.854] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.855] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer3.example.com' 
+[2019-08-21 14:38:04.855] [DEBUG] PgService - Insert sql is INSERT INTO peer  ( "mspid","requests","server_hostname","channel_genesis_hash","peer_type" ) VALUES( $1,$2,$3,$4,$5  ) RETURNING *;
+[2019-08-21 14:38:04.862] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.862] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.863] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer3.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:04.863] [DEBUG] PgService - Insert sql is INSERT INTO peer_ref_channel  ( "peerid","channelid" ) VALUES( $1,$2  ) RETURNING *;
+[2019-08-21 14:38:04.870] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.871] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.871] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer4.example.com' 
+[2019-08-21 14:38:04.871] [DEBUG] PgService - Insert sql is INSERT INTO peer  ( "mspid","requests","server_hostname","channel_genesis_hash","peer_type" ) VALUES( $1,$2,$3,$4,$5  ) RETURNING *;
+[2019-08-21 14:38:04.879] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.879] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.880] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer4.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:04.880] [DEBUG] PgService - Insert sql is INSERT INTO peer_ref_channel  ( "peerid","channelid" ) VALUES( $1,$2  ) RETURNING *;
+[2019-08-21 14:38:04.887] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.887] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.888] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer5.example.com' 
+[2019-08-21 14:38:04.888] [DEBUG] PgService - Insert sql is INSERT INTO peer  ( "mspid","requests","server_hostname","channel_genesis_hash","peer_type" ) VALUES( $1,$2,$3,$4,$5  ) RETURNING *;
+[2019-08-21 14:38:04.895] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.896] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.896] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer5.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:04.896] [DEBUG] PgService - Insert sql is INSERT INTO peer_ref_channel  ( "peerid","channelid" ) VALUES( $1,$2  ) RETURNING *;
+[2019-08-21 14:38:04.904] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.904] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.921] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from chaincodes where name='mycc' and
+        channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and version='v0' and path='github.com/example_cc/go'
+[2019-08-21 14:38:04.921] [DEBUG] PgService - Insert sql is INSERT INTO chaincodes  ( "name","version","path","txcount","createdt","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6  ) RETURNING *;
+[2019-08-21 14:38:04.929] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.929] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.930] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:04.930] [DEBUG] PgService - Insert sql is INSERT INTO peer_ref_chaincode  ( "chaincodeid","cc_version","peerid","channelid" ) VALUES( $1,$2,$3,$4  ) RETURNING *;
+[2019-08-21 14:38:04.937] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.937] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.938] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer2.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:04.938] [DEBUG] PgService - Insert sql is INSERT INTO peer_ref_chaincode  ( "chaincodeid","cc_version","peerid","channelid" ) VALUES( $1,$2,$3,$4  ) RETURNING *;
+[2019-08-21 14:38:04.946] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.946] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.946] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer1.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:04.946] [DEBUG] PgService - Insert sql is INSERT INTO peer_ref_chaincode  ( "chaincodeid","cc_version","peerid","channelid" ) VALUES( $1,$2,$3,$4  ) RETURNING *;
+[2019-08-21 14:38:04.954] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.954] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:04.955] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.org2.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:04.955] [DEBUG] PgService - Insert sql is INSERT INTO peer_ref_chaincode  ( "chaincodeid","cc_version","peerid","channelid" ) VALUES( $1,$2,$3,$4  ) RETURNING *;
+[2019-08-21 14:38:04.962] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:04.962] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:05.004] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from transactions where blockid='3' and txhash='ac33ffd03d64c7a98b9e7808e7f8571263eeead44efb49ab4263a033227b1610' and channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:05.004] [DEBUG] PgService - Insert sql is INSERT INTO transactions  ( "blockid","txhash","createdt","chaincodename","chaincode_id","status","creator_msp_id","endorser_msp_id","type","read_set","write_set","channel_genesis_hash","validation_code","envelope_signature","payload_extension","creator_nonce","chaincode_proposal_input","endorser_signature","creator_id_bytes","payload_proposal_hash","endorser_id_bytes" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21  ) RETURNING *;
+[2019-08-21 14:38:05.012] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:05.012] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:05.013] [DEBUG] PgService - update sql is :  update chaincodes set txcount =txcount+1 where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:05.021] [DEBUG] PgService - --------------------------UPDATE----------------------------
+[2019-08-21 14:38:05.021] [DEBUG] PgService -  update result : Result {
+  command: 'UPDATE',
+  rowCount: 1,
+  oid: null,
+  rows: [],
+  fields: [],
+  _parsers: [],
+  RowCtor: null,
+  rowAsArray: false,
+  _getTypeParser: [Function: bound ] }
+[2019-08-21 14:38:05.022] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:05.022] [DEBUG] PgService - update sql is :  update channel set trans =trans+1 where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:05.029] [DEBUG] PgService - --------------------------UPDATE----------------------------
+[2019-08-21 14:38:05.029] [DEBUG] PgService -  update result : Result {
+  command: 'UPDATE',
+  rowCount: 1,
+  oid: null,
+  rows: [],
+  fields: [],
+  _parsers: [],
+  RowCtor: null,
+  rowAsArray: false,
+  _getTypeParser: [Function: bound ] }
+[2019-08-21 14:38:05.029] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:05.031] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from blocks where blocknum='3' and txcount='1'
+        and channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and prehash='25d8cae974e1331fec2f1634d6a928b41c01ad8bbef6917e417b7a05bd73b7a9' and datahash='0616c7ecd0f4f35629ca788dd6a5ea8c81258f22c8ca38cff3eadf9a254dbce3' 
+[2019-08-21 14:38:05.032] [DEBUG] PgService - Insert sql is INSERT INTO blocks  ( "blocknum","datahash","prehash","txcount","createdt","prev_blockhash","blockhash","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8  ) RETURNING *;
+[2019-08-21 14:38:05.037] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:05.038] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:05.038] [DEBUG] PgService - update sql is :  update channel set blocks =blocks+1 where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:05.046] [DEBUG] PgService - --------------------------UPDATE----------------------------
+[2019-08-21 14:38:05.046] [DEBUG] PgService -  update result : Result {
+  command: 'UPDATE',
+  rowCount: 1,
+  oid: null,
+  rows: [],
+  fields: [],
+  _parsers: [],
+  RowCtor: null,
+  rowAsArray: false,
+  _getTypeParser: [Function: bound ] }
+[2019-08-21 14:38:05.046] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:09.986] [DEBUG] PgService -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 3) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' )
+[2019-08-21 14:38:09.997] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from transactions where blockid='0' and txhash='' and channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:09.997] [DEBUG] PgService - Insert sql is INSERT INTO transactions  ( "blockid","txhash","createdt","chaincodename","chaincode_id","status","creator_msp_id","endorser_msp_id","type","read_set","write_set","channel_genesis_hash","validation_code","envelope_signature","payload_extension","creator_nonce","chaincode_proposal_input","endorser_signature","creator_id_bytes","payload_proposal_hash","endorser_id_bytes" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21  ) RETURNING *;
+[2019-08-21 14:38:10.014] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:10.015] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:10.015] [DEBUG] PgService - update sql is :  update chaincodes set txcount =txcount+1 where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:10.023] [DEBUG] PgService - --------------------------UPDATE----------------------------
+[2019-08-21 14:38:10.023] [DEBUG] PgService -  update result : Result {
+  command: 'UPDATE',
+  rowCount: 1,
+  oid: null,
+  rows: [],
+  fields: [],
+  _parsers: [],
+  RowCtor: null,
+  rowAsArray: false,
+  _getTypeParser: [Function: bound ] }
+[2019-08-21 14:38:10.023] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:10.023] [DEBUG] PgService - update sql is :  update channel set trans =trans+1 where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:10.031] [DEBUG] PgService - --------------------------UPDATE----------------------------
+[2019-08-21 14:38:10.031] [DEBUG] PgService -  update result : Result {
+  command: 'UPDATE',
+  rowCount: 1,
+  oid: null,
+  rows: [],
+  fields: [],
+  _parsers: [],
+  RowCtor: null,
+  rowAsArray: false,
+  _getTypeParser: [Function: bound ] }
+[2019-08-21 14:38:10.031] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:10.032] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from blocks where blocknum='0' and txcount='1'
+        and channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and prehash='' and datahash='59729c7dcb8f1e5ae9b2d8a0d340656b65aaff2395f2fa1d7a3313467dba92cd' 
+[2019-08-21 14:38:10.032] [DEBUG] PgService - Insert sql is INSERT INTO blocks  ( "blocknum","datahash","prehash","txcount","createdt","prev_blockhash","blockhash","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8  ) RETURNING *;
+[2019-08-21 14:38:10.039] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:10.039] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:10.040] [DEBUG] PgService - update sql is :  update channel set blocks =blocks+1 where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:10.048] [DEBUG] PgService - --------------------------UPDATE----------------------------
+[2019-08-21 14:38:10.048] [DEBUG] PgService -  update result : Result {
+  command: 'UPDATE',
+  rowCount: 1,
+  oid: null,
+  rows: [],
+  fields: [],
+  _parsers: [],
+  RowCtor: null,
+  rowAsArray: false,
+  _getTypeParser: [Function: bound ] }
+[2019-08-21 14:38:10.048] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:10.069] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from transactions where blockid='1' and txhash='' and channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:10.069] [DEBUG] PgService - Insert sql is INSERT INTO transactions  ( "blockid","txhash","createdt","chaincodename","chaincode_id","status","creator_msp_id","endorser_msp_id","type","read_set","write_set","channel_genesis_hash","validation_code","envelope_signature","payload_extension","creator_nonce","chaincode_proposal_input","endorser_signature","creator_id_bytes","payload_proposal_hash","endorser_id_bytes" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21  ) RETURNING *;
+[2019-08-21 14:38:10.081] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:10.081] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:10.081] [DEBUG] PgService - update sql is :  update chaincodes set txcount =txcount+1 where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:10.091] [DEBUG] PgService - --------------------------UPDATE----------------------------
+[2019-08-21 14:38:10.091] [DEBUG] PgService -  update result : Result {
+  command: 'UPDATE',
+  rowCount: 1,
+  oid: null,
+  rows: [],
+  fields: [],
+  _parsers: [],
+  RowCtor: null,
+  rowAsArray: false,
+  _getTypeParser: [Function: bound ] }
+[2019-08-21 14:38:10.092] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:10.092] [DEBUG] PgService - update sql is :  update channel set trans =trans+1 where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:10.098] [DEBUG] PgService - --------------------------UPDATE----------------------------
+[2019-08-21 14:38:10.098] [DEBUG] PgService -  update result : Result {
+  command: 'UPDATE',
+  rowCount: 1,
+  oid: null,
+  rows: [],
+  fields: [],
+  _parsers: [],
+  RowCtor: null,
+  rowAsArray: false,
+  _getTypeParser: [Function: bound ] }
+[2019-08-21 14:38:10.098] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:10.099] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from blocks where blocknum='1' and txcount='1'
+        and channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and prehash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and datahash='0a2f4067ca9320f09b6c1a442425163ee39bf208606c6bec9f4ff5ba3f9ad970' 
+[2019-08-21 14:38:10.099] [DEBUG] PgService - Insert sql is INSERT INTO blocks  ( "blocknum","datahash","prehash","txcount","createdt","prev_blockhash","blockhash","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8  ) RETURNING *;
+[2019-08-21 14:38:10.106] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:10.106] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:10.106] [DEBUG] PgService - update sql is :  update channel set blocks =blocks+1 where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:10.114] [DEBUG] PgService - --------------------------UPDATE----------------------------
+[2019-08-21 14:38:10.114] [DEBUG] PgService -  update result : Result {
+  command: 'UPDATE',
+  rowCount: 1,
+  oid: null,
+  rows: [],
+  fields: [],
+  _parsers: [],
+  RowCtor: null,
+  rowAsArray: false,
+  _getTypeParser: [Function: bound ] }
+[2019-08-21 14:38:10.115] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:10.130] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from transactions where blockid='2' and txhash='' and channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:10.131] [DEBUG] PgService - Insert sql is INSERT INTO transactions  ( "blockid","txhash","createdt","chaincodename","chaincode_id","status","creator_msp_id","endorser_msp_id","type","read_set","write_set","channel_genesis_hash","validation_code","envelope_signature","payload_extension","creator_nonce","chaincode_proposal_input","endorser_signature","creator_id_bytes","payload_proposal_hash","endorser_id_bytes" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21  ) RETURNING *;
+[2019-08-21 14:38:10.139] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:10.140] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:10.140] [DEBUG] PgService - update sql is :  update chaincodes set txcount =txcount+1 where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:10.148] [DEBUG] PgService - --------------------------UPDATE----------------------------
+[2019-08-21 14:38:10.148] [DEBUG] PgService -  update result : Result {
+  command: 'UPDATE',
+  rowCount: 1,
+  oid: null,
+  rows: [],
+  fields: [],
+  _parsers: [],
+  RowCtor: null,
+  rowAsArray: false,
+  _getTypeParser: [Function: bound ] }
+[2019-08-21 14:38:10.148] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:10.148] [DEBUG] PgService - update sql is :  update channel set trans =trans+1 where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:10.156] [DEBUG] PgService - --------------------------UPDATE----------------------------
+[2019-08-21 14:38:10.157] [DEBUG] PgService -  update result : Result {
+  command: 'UPDATE',
+  rowCount: 1,
+  oid: null,
+  rows: [],
+  fields: [],
+  _parsers: [],
+  RowCtor: null,
+  rowAsArray: false,
+  _getTypeParser: [Function: bound ] }
+[2019-08-21 14:38:10.157] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:10.158] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from blocks where blocknum='2' and txcount='1'
+        and channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and prehash='56d9ac62c6990c65967c64bc6f25b4cae6d993bcd6aef36ecc46e7f14ede6ceb' and datahash='a9774eb39552a123976cb30d76957827b9abd7504bafd55de73748c94d7e4dea' 
+[2019-08-21 14:38:10.158] [DEBUG] PgService - Insert sql is INSERT INTO blocks  ( "blocknum","datahash","prehash","txcount","createdt","prev_blockhash","blockhash","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8  ) RETURNING *;
+[2019-08-21 14:38:10.164] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:38:10.164] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:10.165] [DEBUG] PgService - update sql is :  update channel set blocks =blocks+1 where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:10.181] [DEBUG] PgService - --------------------------UPDATE----------------------------
+[2019-08-21 14:38:10.181] [DEBUG] PgService -  update result : Result {
+  command: 'UPDATE',
+  rowCount: 1,
+  oid: null,
+  rows: [],
+  fields: [],
+  _parsers: [],
+  RowCtor: null,
+  rowAsArray: false,
+  _getTypeParser: [Function: bound ] }
+[2019-08-21 14:38:10.181] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:38:10.707] [DEBUG] PgService -  the getRowsBySQlQuery select a.* from  (
+      select (select c.name from channel c where c.channel_genesis_hash =
+         'a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' ) as channelname, blocks.blocknum,blocks.txcount ,blocks.datahash ,blocks.blockhash ,blocks.prehash,blocks.createdt,(
+        SELECT  array_agg(txhash) as txhash FROM transactions where blockid = blocks.blocknum  and
+         channel_genesis_hash = 'a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and createdt between '2019-08-20T09:08:10.701Z' and '2019-08-21T09:08:10.701Z') from blocks where
+         blocks.channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and blocknum >= 0 and blocks.createdt between '2019-08-20T09:08:10.701Z' and '2019-08-21T09:08:10.701Z'
+         order by blocks.blocknum desc)  a where  a.txhash IS NOT NULL
+[2019-08-21 14:38:10.709] [DEBUG] PgService -  the getRowsBySQlQuery  with hours as (
+            select generate_series(
+              date_trunc('hour', now()) - '1day'::interval,
+              date_trunc('hour', now()),
+              '1 hour'::interval
+            ) as datetime
+          )
+          select
+            hours.datetime,
+            count(createdt)
+          from hours
+          left join BLOCKS on date_trunc('hour', BLOCKS.createdt) = hours.datetime and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+          group by 1
+          order by 1 
+[2019-08-21 14:38:10.710] [DEBUG] PgService -  the getRowsBySQlQuery  with minutes as (
+            select generate_series(
+              date_trunc('min', now()) - '1 hour'::interval,
+              date_trunc('min', now()),
+              '1 min'::interval
+            ) as datetime
+          )
+          select
+            minutes.datetime,
+            count(createdt)
+          from minutes
+          left join BLOCKS on date_trunc('min', BLOCKS.createdt) = minutes.datetime and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+          group by 1
+          order by 1  
+[2019-08-21 14:38:10.714] [DEBUG] PgService -  the getRowsBySQlNoCondition select  c.name as chaincodename,channel.name as channelName ,c.version as version,c.channel_genesis_hash
+       as channel_genesis_hash,c.path as path ,txcount  as c from chaincodes as c inner join channel on c.channel_genesis_hash=channel.channel_genesis_hash where  c.channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:10.716] [DEBUG] PgService -  the getRowsBySQlCase select count(1) c from chaincodes where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:10.718] [DEBUG] PgService -  the getRowsBySQlNoCondition select channel.name as channelName,c.requests as requests,c.channel_genesis_hash as channel_genesis_hash ,
+    c.server_hostname as server_hostname, c.mspid as mspid, c.peer_type as peer_type  from peer as c inner join  channel on
+    c.channel_genesis_hash=channel.channel_genesis_hash where c.channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:10.722] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.org1.example.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2019-08-21 14:38:10.723] [DEBUG] PgService -  the getRowsBySQlCase select count(1) c from transactions where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:10.724] [DEBUG] PgService -  the getRowsBySQlNoCondition select channel.name as channelName,c.requests as requests,c.channel_genesis_hash as channel_genesis_hash ,
+    c.server_hostname as server_hostname, c.mspid as mspid, c.peer_type as peer_type  from peer as c inner join  channel on
+    c.channel_genesis_hash=channel.channel_genesis_hash where c.channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:10.739] [DEBUG] PgService -  the getRowsBySQlQuery select blocks.blocknum,blocks.txcount ,blocks.datahash ,blocks.blockhash ,blocks.prehash,blocks.createdt,(
+      SELECT  array_agg(txhash) as txhash FROM transactions where blockid = blocks.blocknum and
+       channel_genesis_hash = 'a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' group by transactions.blockid ),
+      channel.name as channelname  from blocks inner join channel on blocks.channel_genesis_hash = channel.channel_genesis_hash  where
+       blocks.channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and blocknum >= 0
+       order by blocks.blocknum desc limit 3
+[2019-08-21 14:38:10.740] [DEBUG] PgService -  the getRowsBySQlCase select count(1) c from blocks where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:10.745] [DEBUG] PgService -  the getRowsBySQlQuery  select count(creator_msp_id), creator_msp_id
+      from transactions
+      where channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+      group by  creator_msp_id
+[2019-08-21 14:38:10.753] [DEBUG] PgService -  the getRowsBySQlCase select count(1) c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and peer_type='PEER' 
+[2019-08-21 14:38:10.754] [DEBUG] PgService -  the getRowsBySQlNoCondition select distinct on (mspid) mspid from peer  where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:10.762] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.org1.example.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2019-08-21 14:38:10.771] [DEBUG] PgService -  the getRowsBySQlQuery  select t.creator_msp_id,t.txhash,t.type,t.chaincodename,t.createdt,channel.name as channelName from transactions as t
+       inner join channel on t.channel_genesis_hash=channel.channel_genesis_hash where  t.blockid >= 0 and t.id >= 0  and
+       t.channel_genesis_hash = 'a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'  and t.createdt between '2019-08-20T09:08:10.764Z' and '2019-08-21T09:08:10.764Z'  order by  t.id desc
+[2019-08-21 14:38:10.773] [DEBUG] PgService -  the getRowsBySQlQuery  with hours as (
+            select generate_series(
+              date_trunc('hour', now()) - '1day'::interval,
+              date_trunc('hour', now()),
+              '1 hour'::interval
+            ) as datetime
+          )
+          select
+            hours.datetime,
+            count(createdt)
+          from hours
+          left join TRANSACTIONS on date_trunc('hour', TRANSACTIONS.createdt) = hours.datetime and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+          group by 1
+          order by 1 
+[2019-08-21 14:38:10.781] [DEBUG] PgService -  the getRowsBySQlQuery  with minutes as (
+            select generate_series(
+              date_trunc('min', now()) - '1hour'::interval,
+              date_trunc('min', now()),
+              '1 min'::interval
+            ) as datetime
+          )
+          select
+            minutes.datetime,
+            count(createdt)
+          from minutes
+          left join TRANSACTIONS on date_trunc('min', TRANSACTIONS.createdt) = minutes.datetime and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+          group by 1
+          order by 1 
+[2019-08-21 14:38:15.030] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer0.org1.example.com' 
+[2019-08-21 14:38:15.030] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:15.031] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer2.org1.example.com' 
+[2019-08-21 14:38:15.031] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer2.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:15.032] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer1.org1.example.com' 
+[2019-08-21 14:38:15.032] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer1.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:15.032] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer0.org2.example.com' 
+[2019-08-21 14:38:15.032] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.org2.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:15.033] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer.example.com' 
+[2019-08-21 14:38:15.033] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:15.034] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer2.example.com' 
+[2019-08-21 14:38:15.034] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer2.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:15.034] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer3.example.com' 
+[2019-08-21 14:38:15.034] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer3.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:15.035] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer4.example.com' 
+[2019-08-21 14:38:15.035] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer4.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:15.035] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer5.example.com' 
+[2019-08-21 14:38:15.036] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer5.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:15.042] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from chaincodes where name='mycc' and
+        channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and version='v0' and path='github.com/example_cc/go'
+[2019-08-21 14:38:15.042] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:15.043] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer2.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:15.043] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer1.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:15.043] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.org2.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:20.036] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer0.org1.example.com' 
+[2019-08-21 14:38:20.036] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.036] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer2.org1.example.com' 
+[2019-08-21 14:38:20.036] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer2.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.037] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer1.org1.example.com' 
+[2019-08-21 14:38:20.037] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer1.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.037] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer0.org2.example.com' 
+[2019-08-21 14:38:20.037] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.org2.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.038] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer.example.com' 
+[2019-08-21 14:38:20.038] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.038] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer2.example.com' 
+[2019-08-21 14:38:20.038] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer2.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.039] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer3.example.com' 
+[2019-08-21 14:38:20.039] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer3.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.039] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer4.example.com' 
+[2019-08-21 14:38:20.039] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer4.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.040] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer5.example.com' 
+[2019-08-21 14:38:20.040] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer5.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.047] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from chaincodes where name='mycc' and
+        channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and version='v0' and path='github.com/example_cc/go'
+[2019-08-21 14:38:20.047] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:20.047] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer2.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:20.048] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer1.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:20.048] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.org2.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:20.101] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer1.org1.example.com' 
+[2019-08-21 14:38:20.102] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer1.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.102] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer0.org1.example.com' 
+[2019-08-21 14:38:20.102] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.103] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer2.org1.example.com' 
+[2019-08-21 14:38:20.103] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer2.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.103] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer0.org2.example.com' 
+[2019-08-21 14:38:20.104] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.org2.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.104] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer.example.com' 
+[2019-08-21 14:38:20.105] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.106] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer2.example.com' 
+[2019-08-21 14:38:20.106] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer2.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.107] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer3.example.com' 
+[2019-08-21 14:38:20.107] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer3.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.108] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer4.example.com' 
+[2019-08-21 14:38:20.108] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer4.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.109] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer5.example.com' 
+[2019-08-21 14:38:20.109] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer5.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.119] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from chaincodes where name='mycc' and
+        channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and version='v0' and path='github.com/example_cc/go'
+[2019-08-21 14:38:20.119] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer1.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:20.120] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:20.120] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer2.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:20.121] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.org2.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:20.161] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer1.org1.example.com' 
+[2019-08-21 14:38:20.161] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer1.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.162] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer0.org1.example.com' 
+[2019-08-21 14:38:20.162] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.163] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer2.org1.example.com' 
+[2019-08-21 14:38:20.163] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer2.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.164] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer0.org2.example.com' 
+[2019-08-21 14:38:20.164] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.org2.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.164] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer.example.com' 
+[2019-08-21 14:38:20.165] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.165] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer2.example.com' 
+[2019-08-21 14:38:20.165] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer2.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.166] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer3.example.com' 
+[2019-08-21 14:38:20.166] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer3.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.167] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer4.example.com' 
+[2019-08-21 14:38:20.167] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer4.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.167] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer5.example.com' 
+[2019-08-21 14:38:20.168] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer5.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:20.173] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from chaincodes where name='mycc' and
+        channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and version='v0' and path='github.com/example_cc/go'
+[2019-08-21 14:38:20.173] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer1.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:20.173] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:20.174] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer2.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:20.174] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.org2.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:28.697] [DEBUG] PgService -  the getRowsBySQlQuery  select t.creator_msp_id,t.txhash,t.type,t.chaincodename,t.createdt,channel.name as channelName from transactions as t
+       inner join channel on t.channel_genesis_hash=channel.channel_genesis_hash where  t.blockid >= 0 and t.id >= 0 and t.creator_msp_id in ('OrdererMSP','Org1MSP','Org2MSP') and
+       t.channel_genesis_hash = 'a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'  and t.createdt between '2019-08-20T14:38:26.000Z' and '2019-08-21T14:38:26.000Z'  order by  t.id desc
+[2019-08-21 14:38:34.453] [DEBUG] PgService -  the getRowsBySQlCase  select * from channel where name='mychannel' and channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:34.481] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer2.org1.example.com' 
+[2019-08-21 14:38:34.481] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer2.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:34.482] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer1.org1.example.com' 
+[2019-08-21 14:38:34.482] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer1.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:34.483] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer0.org1.example.com' 
+[2019-08-21 14:38:34.483] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:34.484] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer0.org2.example.com' 
+[2019-08-21 14:38:34.484] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.org2.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:34.485] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer.example.com' 
+[2019-08-21 14:38:34.485] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:34.485] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer2.example.com' 
+[2019-08-21 14:38:34.486] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer2.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:34.486] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer3.example.com' 
+[2019-08-21 14:38:34.487] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer3.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:34.487] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer4.example.com' 
+[2019-08-21 14:38:34.487] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer4.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:34.488] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer5.example.com' 
+[2019-08-21 14:38:34.488] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer5.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:38:34.496] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from chaincodes where name='mycc' and
+        channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and version='v0' and path='github.com/example_cc/go'
+[2019-08-21 14:38:34.497] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer2.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:34.497] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer1.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:34.498] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:38:34.498] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.org2.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:04.442] [DEBUG] PgService -  the getRowsBySQlCase  select * from channel where name='mychannel' and channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:04.455] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer1.org1.example.com' 
+[2019-08-21 14:39:04.455] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer1.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:04.456] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer0.org1.example.com' 
+[2019-08-21 14:39:04.456] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:04.456] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer2.org1.example.com' 
+[2019-08-21 14:39:04.457] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer2.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:04.457] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer0.org2.example.com' 
+[2019-08-21 14:39:04.457] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.org2.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:04.458] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer.example.com' 
+[2019-08-21 14:39:04.458] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:04.458] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer2.example.com' 
+[2019-08-21 14:39:04.459] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer2.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:04.459] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer3.example.com' 
+[2019-08-21 14:39:04.460] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer3.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:04.460] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer4.example.com' 
+[2019-08-21 14:39:04.461] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer4.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:04.461] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer5.example.com' 
+[2019-08-21 14:39:04.461] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer5.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:04.469] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from chaincodes where name='mycc' and
+        channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and version='v0' and path='github.com/example_cc/go'
+[2019-08-21 14:39:04.470] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer1.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:04.470] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:04.470] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer2.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:04.471] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.org2.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:04.985] [DEBUG] PgService -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 3) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' )
+[2019-08-21 14:39:11.036] [DEBUG] PgService -  the getRowsBySQlQuery select a.* from  (
+      select (select c.name from channel c where c.channel_genesis_hash =
+         'a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' ) as channelname, blocks.blocknum,blocks.txcount ,blocks.datahash ,blocks.blockhash ,blocks.prehash,blocks.createdt,(
+        SELECT  array_agg(txhash) as txhash FROM transactions where blockid = blocks.blocknum  and
+         channel_genesis_hash = 'a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and createdt between '2019-08-20T09:09:11.030Z' and '2019-08-21T09:09:11.030Z') from blocks where
+         blocks.channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and blocknum >= 0 and blocks.createdt between '2019-08-20T09:09:11.030Z' and '2019-08-21T09:09:11.030Z'
+         order by blocks.blocknum desc)  a where  a.txhash IS NOT NULL
+[2019-08-21 14:39:11.037] [DEBUG] PgService -  the getRowsBySQlQuery  with hours as (
+            select generate_series(
+              date_trunc('hour', now()) - '1day'::interval,
+              date_trunc('hour', now()),
+              '1 hour'::interval
+            ) as datetime
+          )
+          select
+            hours.datetime,
+            count(createdt)
+          from hours
+          left join BLOCKS on date_trunc('hour', BLOCKS.createdt) = hours.datetime and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+          group by 1
+          order by 1 
+[2019-08-21 14:39:11.041] [DEBUG] PgService -  the getRowsBySQlQuery  with minutes as (
+            select generate_series(
+              date_trunc('min', now()) - '1 hour'::interval,
+              date_trunc('min', now()),
+              '1 min'::interval
+            ) as datetime
+          )
+          select
+            minutes.datetime,
+            count(createdt)
+          from minutes
+          left join BLOCKS on date_trunc('min', BLOCKS.createdt) = minutes.datetime and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+          group by 1
+          order by 1  
+[2019-08-21 14:39:11.042] [DEBUG] PgService -  the getRowsBySQlNoCondition select  c.name as chaincodename,channel.name as channelName ,c.version as version,c.channel_genesis_hash
+       as channel_genesis_hash,c.path as path ,txcount  as c from chaincodes as c inner join channel on c.channel_genesis_hash=channel.channel_genesis_hash where  c.channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:11.043] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.org1.example.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2019-08-21 14:39:11.045] [DEBUG] PgService -  the getRowsBySQlNoCondition select channel.name as channelName,c.requests as requests,c.channel_genesis_hash as channel_genesis_hash ,
+    c.server_hostname as server_hostname, c.mspid as mspid, c.peer_type as peer_type  from peer as c inner join  channel on
+    c.channel_genesis_hash=channel.channel_genesis_hash where c.channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:11.055] [DEBUG] PgService -  the getRowsBySQlCase select count(1) c from chaincodes where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:11.063] [DEBUG] PgService -  the getRowsBySQlQuery select blocks.blocknum,blocks.txcount ,blocks.datahash ,blocks.blockhash ,blocks.prehash,blocks.createdt,(
+      SELECT  array_agg(txhash) as txhash FROM transactions where blockid = blocks.blocknum and
+       channel_genesis_hash = 'a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' group by transactions.blockid ),
+      channel.name as channelname  from blocks inner join channel on blocks.channel_genesis_hash = channel.channel_genesis_hash  where
+       blocks.channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and blocknum >= 0
+       order by blocks.blocknum desc limit 3
+[2019-08-21 14:39:11.064] [DEBUG] PgService -  the getRowsBySQlNoCondition select channel.name as channelName,c.requests as requests,c.channel_genesis_hash as channel_genesis_hash ,
+    c.server_hostname as server_hostname, c.mspid as mspid, c.peer_type as peer_type  from peer as c inner join  channel on
+    c.channel_genesis_hash=channel.channel_genesis_hash where c.channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:11.070] [DEBUG] PgService -  the getRowsBySQlQuery  select count(creator_msp_id), creator_msp_id
+      from transactions
+      where channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+      group by  creator_msp_id
+[2019-08-21 14:39:11.074] [DEBUG] PgService -  the getRowsBySQlQuery  select t.creator_msp_id,t.txhash,t.type,t.chaincodename,t.createdt,channel.name as channelName from transactions as t
+       inner join channel on t.channel_genesis_hash=channel.channel_genesis_hash where  t.blockid >= 0 and t.id >= 0  and
+       t.channel_genesis_hash = 'a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'  and t.createdt between '2019-08-20T09:09:11.054Z' and '2019-08-21T09:09:11.054Z'  order by  t.id desc
+[2019-08-21 14:39:11.080] [DEBUG] PgService -  the getRowsBySQlCase select count(1) c from transactions where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:11.083] [DEBUG] PgService -  the getRowsBySQlQuery  with hours as (
+            select generate_series(
+              date_trunc('hour', now()) - '1day'::interval,
+              date_trunc('hour', now()),
+              '1 hour'::interval
+            ) as datetime
+          )
+          select
+            hours.datetime,
+            count(createdt)
+          from hours
+          left join TRANSACTIONS on date_trunc('hour', TRANSACTIONS.createdt) = hours.datetime and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+          group by 1
+          order by 1 
+[2019-08-21 14:39:11.086] [DEBUG] PgService -  the getRowsBySQlNoCondition select distinct on (mspid) mspid from peer  where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:11.091] [DEBUG] PgService -  the getRowsBySQlCase select count(1) c from blocks where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:11.096] [DEBUG] PgService -  the getRowsBySQlQuery  with minutes as (
+            select generate_series(
+              date_trunc('min', now()) - '1hour'::interval,
+              date_trunc('min', now()),
+              '1 min'::interval
+            ) as datetime
+          )
+          select
+            minutes.datetime,
+            count(createdt)
+          from minutes
+          left join TRANSACTIONS on date_trunc('min', TRANSACTIONS.createdt) = minutes.datetime and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+          group by 1
+          order by 1 
+[2019-08-21 14:39:11.096] [DEBUG] PgService -  the getRowsBySQlCase select count(1) c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and peer_type='PEER' 
+[2019-08-21 14:39:18.049] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from transactions where blockid='4' and txhash='e5b77292975f44993b97aef54217eb98b2da0a45642b4a568d26a6cd101e9dd9' and channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:18.049] [DEBUG] PgService - Insert sql is INSERT INTO transactions  ( "blockid","txhash","createdt","chaincodename","chaincode_id","status","creator_msp_id","endorser_msp_id","type","read_set","write_set","channel_genesis_hash","validation_code","envelope_signature","payload_extension","creator_nonce","chaincode_proposal_input","endorser_signature","creator_id_bytes","payload_proposal_hash","endorser_id_bytes" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21  ) RETURNING *;
+[2019-08-21 14:39:18.066] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:39:18.066] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:39:18.066] [DEBUG] PgService - update sql is :  update chaincodes set txcount =txcount+1 where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:18.074] [DEBUG] PgService - --------------------------UPDATE----------------------------
+[2019-08-21 14:39:18.074] [DEBUG] PgService -  update result : Result {
+  command: 'UPDATE',
+  rowCount: 1,
+  oid: null,
+  rows: [],
+  fields: [],
+  _parsers: [],
+  RowCtor: null,
+  rowAsArray: false,
+  _getTypeParser: [Function: bound ] }
+[2019-08-21 14:39:18.075] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:39:18.075] [DEBUG] PgService - update sql is :  update channel set trans =trans+1 where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:18.083] [DEBUG] PgService - --------------------------UPDATE----------------------------
+[2019-08-21 14:39:18.083] [DEBUG] PgService -  update result : Result {
+  command: 'UPDATE',
+  rowCount: 1,
+  oid: null,
+  rows: [],
+  fields: [],
+  _parsers: [],
+  RowCtor: null,
+  rowAsArray: false,
+  _getTypeParser: [Function: bound ] }
+[2019-08-21 14:39:18.083] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:39:18.084] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from blocks where blocknum='4' and txcount='1'
+        and channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and prehash='850bfb6996f88bbf7f64759ac68a784be7cc17df64ba25dd39fcdb4d61723aa7' and datahash='07c5be23abecc31a0e9a43ddf8b6da1ccbabaa3688114d908f66fff292203d73' 
+[2019-08-21 14:39:18.084] [DEBUG] PgService - Insert sql is INSERT INTO blocks  ( "blocknum","datahash","prehash","txcount","createdt","prev_blockhash","blockhash","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8  ) RETURNING *;
+[2019-08-21 14:39:18.091] [DEBUG] PgService - --------------------------INSERT----------------------------
+[2019-08-21 14:39:18.091] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:39:18.091] [DEBUG] PgService - update sql is :  update channel set blocks =blocks+1 where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:18.099] [DEBUG] PgService - --------------------------UPDATE----------------------------
+[2019-08-21 14:39:18.099] [DEBUG] PgService -  update result : Result {
+  command: 'UPDATE',
+  rowCount: 1,
+  oid: null,
+  rows: [],
+  fields: [],
+  _parsers: [],
+  RowCtor: null,
+  rowAsArray: false,
+  _getTypeParser: [Function: bound ] }
+[2019-08-21 14:39:18.100] [DEBUG] PgService - -----------------------------------------------------------------
+
+
+[2019-08-21 14:39:18.124] [DEBUG] PgService -  the getRowsBySQlQuery select a.* from  (
+      select (select c.name from channel c where c.channel_genesis_hash =
+         'a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' ) as channelname, blocks.blocknum,blocks.txcount ,blocks.datahash ,blocks.blockhash ,blocks.prehash,blocks.createdt,(
+        SELECT  array_agg(txhash) as txhash FROM transactions where blockid = blocks.blocknum  and
+         channel_genesis_hash = 'a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and createdt between '2019-08-20T09:09:18.123Z' and '2019-08-21T09:09:18.123Z') from blocks where
+         blocks.channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and blocknum >= 0 and blocks.createdt between '2019-08-20T09:09:18.123Z' and '2019-08-21T09:09:18.123Z'
+         order by blocks.blocknum desc)  a where  a.txhash IS NOT NULL
+[2019-08-21 14:39:18.128] [DEBUG] PgService -  the getRowsBySQlQuery  with hours as (
+            select generate_series(
+              date_trunc('hour', now()) - '1day'::interval,
+              date_trunc('hour', now()),
+              '1 hour'::interval
+            ) as datetime
+          )
+          select
+            hours.datetime,
+            count(createdt)
+          from hours
+          left join BLOCKS on date_trunc('hour', BLOCKS.createdt) = hours.datetime and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+          group by 1
+          order by 1 
+[2019-08-21 14:39:18.131] [DEBUG] PgService -  the getRowsBySQlQuery  with minutes as (
+            select generate_series(
+              date_trunc('min', now()) - '1 hour'::interval,
+              date_trunc('min', now()),
+              '1 min'::interval
+            ) as datetime
+          )
+          select
+            minutes.datetime,
+            count(createdt)
+          from minutes
+          left join BLOCKS on date_trunc('min', BLOCKS.createdt) = minutes.datetime and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+          group by 1
+          order by 1  
+[2019-08-21 14:39:18.132] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.org1.example.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2019-08-21 14:39:18.134] [DEBUG] PgService -  the getRowsBySQlNoCondition select  c.name as chaincodename,channel.name as channelName ,c.version as version,c.channel_genesis_hash
+       as channel_genesis_hash,c.path as path ,txcount  as c from chaincodes as c inner join channel on c.channel_genesis_hash=channel.channel_genesis_hash where  c.channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:18.137] [DEBUG] PgService -  the getRowsBySQlCase select count(1) c from chaincodes where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:18.141] [DEBUG] PgService -  the getRowsBySQlQuery  select count(creator_msp_id), creator_msp_id
+      from transactions
+      where channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+      group by  creator_msp_id
+[2019-08-21 14:39:18.142] [DEBUG] PgService -  the getRowsBySQlQuery select blocks.blocknum,blocks.txcount ,blocks.datahash ,blocks.blockhash ,blocks.prehash,blocks.createdt,(
+      SELECT  array_agg(txhash) as txhash FROM transactions where blockid = blocks.blocknum and
+       channel_genesis_hash = 'a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' group by transactions.blockid ),
+      channel.name as channelname  from blocks inner join channel on blocks.channel_genesis_hash = channel.channel_genesis_hash  where
+       blocks.channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and blocknum >= 0
+       order by blocks.blocknum desc limit 3
+[2019-08-21 14:39:18.142] [DEBUG] PgService -  the getRowsBySQlCase select count(1) c from transactions where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:18.143] [DEBUG] PgService -  the getRowsBySQlQuery  select t.creator_msp_id,t.txhash,t.type,t.chaincodename,t.createdt,channel.name as channelName from transactions as t
+       inner join channel on t.channel_genesis_hash=channel.channel_genesis_hash where  t.blockid >= 0 and t.id >= 0  and
+       t.channel_genesis_hash = 'a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'  and t.createdt between '2019-08-20T09:09:18.139Z' and '2019-08-21T09:09:18.139Z'  order by  t.id desc
+[2019-08-21 14:39:18.144] [DEBUG] PgService -  the getRowsBySQlNoCondition select channel.name as channelName,c.requests as requests,c.channel_genesis_hash as channel_genesis_hash ,
+    c.server_hostname as server_hostname, c.mspid as mspid, c.peer_type as peer_type  from peer as c inner join  channel on
+    c.channel_genesis_hash=channel.channel_genesis_hash where c.channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:18.152] [DEBUG] PgService -  the getRowsBySQlNoCondition select distinct on (mspid) mspid from peer  where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:18.153] [DEBUG] PgService -  the getRowsBySQlCase select count(1) c from blocks where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:18.160] [DEBUG] PgService -  the getRowsBySQlQuery  with hours as (
+            select generate_series(
+              date_trunc('hour', now()) - '1day'::interval,
+              date_trunc('hour', now()),
+              '1 hour'::interval
+            ) as datetime
+          )
+          select
+            hours.datetime,
+            count(createdt)
+          from hours
+          left join TRANSACTIONS on date_trunc('hour', TRANSACTIONS.createdt) = hours.datetime and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+          group by 1
+          order by 1 
+[2019-08-21 14:39:18.164] [DEBUG] PgService -  the getRowsBySQlQuery  with minutes as (
+            select generate_series(
+              date_trunc('min', now()) - '1hour'::interval,
+              date_trunc('min', now()),
+              '1 min'::interval
+            ) as datetime
+          )
+          select
+            minutes.datetime,
+            count(createdt)
+          from minutes
+          left join TRANSACTIONS on date_trunc('min', TRANSACTIONS.createdt) = minutes.datetime and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+          group by 1
+          order by 1 
+[2019-08-21 14:39:18.166] [DEBUG] PgService -  the getRowsBySQlCase select count(1) c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and peer_type='PEER' 
+[2019-08-21 14:39:18.174] [DEBUG] PgService -  the getRowsBySQlNoCondition select channel.name as channelName,c.requests as requests,c.channel_genesis_hash as channel_genesis_hash ,
+    c.server_hostname as server_hostname, c.mspid as mspid, c.peer_type as peer_type  from peer as c inner join  channel on
+    c.channel_genesis_hash=channel.channel_genesis_hash where c.channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:28.691] [DEBUG] PgService -  the getRowsBySQlQuery  select t.creator_msp_id,t.txhash,t.type,t.chaincodename,t.createdt,channel.name as channelName from transactions as t
+       inner join channel on t.channel_genesis_hash=channel.channel_genesis_hash where  t.blockid >= 0 and t.id >= 0 and t.creator_msp_id in ('OrdererMSP','Org1MSP','Org2MSP') and
+       t.channel_genesis_hash = 'a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'  and t.createdt between '2019-08-20T14:38:26.000Z' and '2019-08-21T14:38:26.000Z'  order by  t.id desc
+[2019-08-21 14:39:34.447] [DEBUG] PgService -  the getRowsBySQlCase  select * from channel where name='mychannel' and channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:34.461] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer0.org1.example.com' 
+[2019-08-21 14:39:34.461] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:34.462] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer2.org1.example.com' 
+[2019-08-21 14:39:34.462] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer2.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:34.462] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer1.org1.example.com' 
+[2019-08-21 14:39:34.463] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer1.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:34.463] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer0.org2.example.com' 
+[2019-08-21 14:39:34.464] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.org2.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:34.464] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer.example.com' 
+[2019-08-21 14:39:34.464] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:34.465] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer2.example.com' 
+[2019-08-21 14:39:34.465] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer2.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:34.466] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer3.example.com' 
+[2019-08-21 14:39:34.466] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer3.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:34.466] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer4.example.com' 
+[2019-08-21 14:39:34.467] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer4.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:34.467] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer5.example.com' 
+[2019-08-21 14:39:34.468] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer5.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:39:34.477] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from chaincodes where name='mycc' and
+        channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and version='v0' and path='github.com/example_cc/go'
+[2019-08-21 14:39:34.477] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:34.477] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer2.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:34.477] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer1.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:34.478] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.org2.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:39:34.507] [DEBUG] PgService -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 4) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' )
+[2019-08-21 14:40:04.451] [DEBUG] PgService -  the getRowsBySQlCase  select * from channel where name='mychannel' and channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:04.466] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer2.org1.example.com' 
+[2019-08-21 14:40:04.466] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer2.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:04.466] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer1.org1.example.com' 
+[2019-08-21 14:40:04.467] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer1.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:04.467] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer0.org1.example.com' 
+[2019-08-21 14:40:04.467] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:04.468] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer0.org2.example.com' 
+[2019-08-21 14:40:04.468] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.org2.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:04.469] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer.example.com' 
+[2019-08-21 14:40:04.469] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:04.469] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer2.example.com' 
+[2019-08-21 14:40:04.470] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer2.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:04.470] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer3.example.com' 
+[2019-08-21 14:40:04.470] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer3.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:04.474] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer4.example.com' 
+[2019-08-21 14:40:04.474] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer4.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:04.475] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer5.example.com' 
+[2019-08-21 14:40:04.475] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer5.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:04.478] [DEBUG] PgService -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 4) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' )
+[2019-08-21 14:40:04.480] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from chaincodes where name='mycc' and
+        channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and version='v0' and path='github.com/example_cc/go'
+[2019-08-21 14:40:04.481] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer2.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:40:04.481] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer1.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:40:04.482] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:40:04.482] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.org2.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:40:04.991] [DEBUG] PgService -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 4) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' )
+[2019-08-21 14:40:22.648] [DEBUG] PgService -  the getRowsBySQlQuery select a.* from  (
+      select (select c.name from channel c where c.channel_genesis_hash =
+         'a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' ) as channelname, blocks.blocknum,blocks.txcount ,blocks.datahash ,blocks.blockhash ,blocks.prehash,blocks.createdt,(
+        SELECT  array_agg(txhash) as txhash FROM transactions where blockid = blocks.blocknum  and
+         channel_genesis_hash = 'a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and createdt between '2019-08-20T09:10:22.645Z' and '2019-08-21T09:10:22.645Z') from blocks where
+         blocks.channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and blocknum >= 0 and blocks.createdt between '2019-08-20T09:10:22.645Z' and '2019-08-21T09:10:22.645Z'
+         order by blocks.blocknum desc)  a where  a.txhash IS NOT NULL
+[2019-08-21 14:40:22.649] [DEBUG] PgService -  the getRowsBySQlQuery  with hours as (
+            select generate_series(
+              date_trunc('hour', now()) - '1day'::interval,
+              date_trunc('hour', now()),
+              '1 hour'::interval
+            ) as datetime
+          )
+          select
+            hours.datetime,
+            count(createdt)
+          from hours
+          left join BLOCKS on date_trunc('hour', BLOCKS.createdt) = hours.datetime and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+          group by 1
+          order by 1 
+[2019-08-21 14:40:22.653] [DEBUG] PgService -  the getRowsBySQlQuery  with minutes as (
+            select generate_series(
+              date_trunc('min', now()) - '1 hour'::interval,
+              date_trunc('min', now()),
+              '1 min'::interval
+            ) as datetime
+          )
+          select
+            minutes.datetime,
+            count(createdt)
+          from minutes
+          left join BLOCKS on date_trunc('min', BLOCKS.createdt) = minutes.datetime and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+          group by 1
+          order by 1  
+[2019-08-21 14:40:22.657] [DEBUG] PgService -  the getRowsBySQlNoCondition select  c.name as chaincodename,channel.name as channelName ,c.version as version,c.channel_genesis_hash
+       as channel_genesis_hash,c.path as path ,txcount  as c from chaincodes as c inner join channel on c.channel_genesis_hash=channel.channel_genesis_hash where  c.channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:22.660] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.org1.example.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2019-08-21 14:40:22.662] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.org1.example.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2019-08-21 14:40:22.664] [DEBUG] PgService -  the getRowsBySQlNoCondition select channel.name as channelName,c.requests as requests,c.channel_genesis_hash as channel_genesis_hash ,
+    c.server_hostname as server_hostname, c.mspid as mspid, c.peer_type as peer_type  from peer as c inner join  channel on
+    c.channel_genesis_hash=channel.channel_genesis_hash where c.channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:40:22.673] [DEBUG] PgService -  the getRowsBySQlNoCondition select channel.name as channelName,c.requests as requests,c.channel_genesis_hash as channel_genesis_hash ,
+    c.server_hostname as server_hostname, c.mspid as mspid, c.peer_type as peer_type  from peer as c inner join  channel on
+    c.channel_genesis_hash=channel.channel_genesis_hash where c.channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:40:22.679] [DEBUG] PgService -  the getRowsBySQlCase select count(1) c from chaincodes where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:22.685] [DEBUG] PgService -  the getRowsBySQlQuery select blocks.blocknum,blocks.txcount ,blocks.datahash ,blocks.blockhash ,blocks.prehash,blocks.createdt,(
+      SELECT  array_agg(txhash) as txhash FROM transactions where blockid = blocks.blocknum and
+       channel_genesis_hash = 'a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' group by transactions.blockid ),
+      channel.name as channelname  from blocks inner join channel on blocks.channel_genesis_hash = channel.channel_genesis_hash  where
+       blocks.channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and blocknum >= 0
+       order by blocks.blocknum desc limit 3
+[2019-08-21 14:40:22.691] [DEBUG] PgService -  the getRowsBySQlCase select count(1) c from transactions where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:40:22.692] [DEBUG] PgService -  the getRowsBySQlCase select count(1) c from blocks where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:40:22.696] [DEBUG] PgService -  the getRowsBySQlCase select count(1) c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and peer_type='PEER' 
+[2019-08-21 14:40:22.703] [DEBUG] PgService -  the getRowsBySQlQuery  select count(creator_msp_id), creator_msp_id
+      from transactions
+      where channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+      group by  creator_msp_id
+[2019-08-21 14:40:22.705] [DEBUG] PgService -  the getRowsBySQlNoCondition select distinct on (mspid) mspid from peer  where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:40:22.708] [DEBUG] PgService -  the getRowsBySQlQuery  select t.creator_msp_id,t.txhash,t.type,t.chaincodename,t.createdt,channel.name as channelName from transactions as t
+       inner join channel on t.channel_genesis_hash=channel.channel_genesis_hash where  t.blockid >= 0 and t.id >= 0  and
+       t.channel_genesis_hash = 'a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'  and t.createdt between '2019-08-20T09:10:22.704Z' and '2019-08-21T09:10:22.704Z'  order by  t.id desc
+[2019-08-21 14:40:22.713] [DEBUG] PgService -  the getRowsBySQlQuery  with hours as (
+            select generate_series(
+              date_trunc('hour', now()) - '1day'::interval,
+              date_trunc('hour', now()),
+              '1 hour'::interval
+            ) as datetime
+          )
+          select
+            hours.datetime,
+            count(createdt)
+          from hours
+          left join TRANSACTIONS on date_trunc('hour', TRANSACTIONS.createdt) = hours.datetime and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+          group by 1
+          order by 1 
+[2019-08-21 14:40:22.716] [DEBUG] PgService -  the getRowsBySQlQuery  with minutes as (
+            select generate_series(
+              date_trunc('min', now()) - '1hour'::interval,
+              date_trunc('min', now()),
+              '1 min'::interval
+            ) as datetime
+          )
+          select
+            minutes.datetime,
+            count(createdt)
+          from minutes
+          left join TRANSACTIONS on date_trunc('min', TRANSACTIONS.createdt) = minutes.datetime and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+          group by 1
+          order by 1 
+[2019-08-21 14:40:34.462] [DEBUG] PgService -  the getRowsBySQlCase  select * from channel where name='mychannel' and channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:34.482] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer0.org2.example.com' 
+[2019-08-21 14:40:34.483] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.org2.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:34.483] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer0.org1.example.com' 
+[2019-08-21 14:40:34.484] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer0.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:34.484] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer2.org1.example.com' 
+[2019-08-21 14:40:34.485] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer2.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:34.485] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='peer1.org1.example.com' 
+[2019-08-21 14:40:34.486] [DEBUG] PgService -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 4) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' )
+[2019-08-21 14:40:34.486] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'peer1.org1.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:34.486] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer.example.com' 
+[2019-08-21 14:40:34.487] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:34.487] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer2.example.com' 
+[2019-08-21 14:40:34.488] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer2.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:34.488] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer3.example.com' 
+[2019-08-21 14:40:34.488] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer3.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:34.489] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer4.example.com' 
+[2019-08-21 14:40:34.489] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer4.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:34.490] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer where channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and server_hostname='orderer5.example.com' 
+[2019-08-21 14:40:34.490] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_channel prc where prc.peerid = 'orderer5.example.com' and prc.channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' 
+[2019-08-21 14:40:34.495] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from chaincodes where name='mycc' and
+        channel_genesis_hash='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' and version='v0' and path='github.com/example_cc/go'
+[2019-08-21 14:40:34.496] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.org2.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:40:34.496] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer0.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:40:34.497] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer2.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:40:34.497] [DEBUG] PgService -  the getRowByPkOne sql select count(1) as c from peer_ref_chaincode prc where prc.peerid= 'peer1.org1.example.com' and prc.chaincodeid='mycc' and cc_version='v0' and channelid='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47'
+[2019-08-21 14:40:34.511] [DEBUG] PgService -  the getRowsBySQlQuery SELECT s.id AS missing_id
+    FROM generate_series(0, 4) s(id) WHERE NOT EXISTS (SELECT 1 FROM blocks WHERE blocknum = s.id and channel_genesis_hash ='a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47' )

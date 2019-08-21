@@ -1,0 +1,1141 @@
+false 'ssl-certs' '/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/ssl-certs'
+error when connecting to db: { error: password authentication failed for user "sanket"
+    at Connection.parseE (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/node_modules/pg/lib/connection.js:554:11)
+    at Connection.parseMessage (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/node_modules/pg/lib/connection.js:379:19)
+    at Socket.<anonymous> (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/node_modules/pg/lib/connection.js:119:22)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:601:20)
+  name: 'error',
+  length: 102,
+  severity: 'FATAL',
+  code: '28P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'auth.c',
+  line: '328',
+  routine: 'auth_failed' }
+******* Initialization started for hyperledger fabric platform ******, { 'first-network': 
+   { name: 'first-network',
+     profile: './connection-profile/first-network.json' } }
+ client_configs.name  first-network  client_configs.profile  ./connection-profile/first-network.json
+FabricUtils.createFabricClient 
+config.client.tlsEnable  true
+FabricConfig, this.config.channels  mychannel
+error when connecting to db: TypeError: Cannot read property 'on' of undefined
+    at Timeout.handleDisconnect [as _onTimeout] (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/app/persistence/postgreSQL/PgService.js:95:16)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+<<<<<<<<<<<<<<<<<<<<<<<<<< Explorer Error >>>>>>>>>>>>>>>>>>>>>
+TypeError: "callback" argument must be a function
+    at setTimeout (timers.js:450:11)
+    at Timeout.handleDisconnect [as _onTimeout] (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/app/persistence/postgreSQL/PgService.js:112:5)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+Channel genesis hash for channel [mychannel] >> 2ed83753bc8950da9a9b731c3bd50bd65a2233e41efb1898ee9511cada1ce2f1
+FabricUtils.createDetachClient 
+
+
+Please open web browser to access ：http://localhost:8080/
+
+
+pid is 20456
+
+
+error when connecting to db: { error: password authentication failed for user "sanket"
+    at Connection.parseE (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/node_modules/pg/lib/connection.js:554:11)
+    at Connection.parseMessage (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/node_modules/pg/lib/connection.js:379:19)
+    at Socket.<anonymous> (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/node_modules/pg/lib/connection.js:119:22)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:601:20)
+  name: 'error',
+  length: 102,
+  severity: 'FATAL',
+  code: '28P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'auth.c',
+  line: '328',
+  routine: 'auth_failed' }
+
+Sync process is started for the network : [first-network] and client : [first-network]
+config.client.tlsEnable  true
+FabricConfig, this.config.channels  mychannel
+(node:20569) DeprecationWarning: grpc.load: Use the @grpc/proto-loader module with grpc.loadPackageDefinition instead
+An identity for the admin user: admin already exists in the wallet
+Received kill signal, shutting down gracefully
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing explorer  >>>>>>>>>>>>>>>>>>>>>
+Closed out connections
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing client processor >>>>>>>>>>>>>>>>>>>>>
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+Channel genesis hash for channel [mychannel] >> 2ed83753bc8950da9a9b731c3bd50bd65a2233e41efb1898ee9511cada1ce2f1
+SyncServices.synchNetworkConfigToDB client  first-network  channel_name  mychannel
+<<<<<<<<<<<<<<<<<<<<<<<<<< Synchronizer Error >>>>>>>>>>>>>>>>>>>>>
+Error: Client was closed and is not queryable
+    at process.nextTick (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/node_modules/pg/lib/client.js:435:25)
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing client processor >>>>>>>>>>>>>>>>>>>>>
+error when connecting to db: TypeError: Cannot read property 'on' of undefined
+    at Timeout.handleDisconnect [as _onTimeout] (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/app/persistence/postgreSQL/PgService.js:95:16)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+<<<<<<<<<<<<<<<<<<<<<<<<<< Synchronizer Error >>>>>>>>>>>>>>>>>>>>>
+TypeError: "callback" argument must be a function
+    at setTimeout (timers.js:450:11)
+    at Timeout.handleDisconnect [as _onTimeout] (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/app/persistence/postgreSQL/PgService.js:112:5)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing client processor >>>>>>>>>>>>>>>>>>>>>
+false 'ssl-certs' '/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/ssl-certs'
+error when connecting to db: { error: password authentication failed for user "sanket"
+    at Connection.parseE (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/node_modules/pg/lib/connection.js:554:11)
+    at Connection.parseMessage (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/node_modules/pg/lib/connection.js:379:19)
+    at Socket.<anonymous> (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/node_modules/pg/lib/connection.js:119:22)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:601:20)
+  name: 'error',
+  length: 102,
+  severity: 'FATAL',
+  code: '28P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'auth.c',
+  line: '328',
+  routine: 'auth_failed' }
+******* Initialization started for hyperledger fabric platform ******, { 'first-network': 
+   { name: 'first-network',
+     profile: './connection-profile/first-network.json' } }
+ client_configs.name  first-network  client_configs.profile  ./connection-profile/first-network.json
+FabricUtils.createFabricClient 
+config.client.tlsEnable  true
+FabricConfig, this.config.channels  mychannel
+An identity for the admin user: admin already exists in the wallet
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+Channel genesis hash for channel [mychannel] >> 2ed83753bc8950da9a9b731c3bd50bd65a2233e41efb1898ee9511cada1ce2f1
+FabricUtils.createDetachClient 
+
+
+Please open web browser to access ：http://localhost:8080/
+
+
+pid is 20612
+
+
+error when connecting to db: { error: password authentication failed for user "sanket"
+    at Connection.parseE (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/node_modules/pg/lib/connection.js:554:11)
+    at Connection.parseMessage (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/node_modules/pg/lib/connection.js:379:19)
+    at Socket.<anonymous> (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/node_modules/pg/lib/connection.js:119:22)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:601:20)
+  name: 'error',
+  length: 102,
+  severity: 'FATAL',
+  code: '28P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'auth.c',
+  line: '328',
+  routine: 'auth_failed' }
+
+Sync process is started for the network : [first-network] and client : [first-network]
+config.client.tlsEnable  true
+FabricConfig, this.config.channels  mychannel
+(node:20646) DeprecationWarning: grpc.load: Use the @grpc/proto-loader module with grpc.loadPackageDefinition instead
+An identity for the admin user: admin already exists in the wallet
+error when connecting to db: TypeError: Cannot read property 'on' of undefined
+    at Timeout.handleDisconnect [as _onTimeout] (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/app/persistence/postgreSQL/PgService.js:95:16)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+<<<<<<<<<<<<<<<<<<<<<<<<<< Explorer Error >>>>>>>>>>>>>>>>>>>>>
+TypeError: "callback" argument must be a function
+    at setTimeout (timers.js:450:11)
+    at Timeout.handleDisconnect [as _onTimeout] (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/app/persistence/postgreSQL/PgService.js:112:5)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+Channel genesis hash for channel [mychannel] >> 2ed83753bc8950da9a9b731c3bd50bd65a2233e41efb1898ee9511cada1ce2f1
+SyncServices.synchNetworkConfigToDB client  first-network  channel_name  mychannel
+error when connecting to db: TypeError: Cannot read property 'on' of undefined
+    at Timeout.handleDisconnect [as _onTimeout] (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/app/persistence/postgreSQL/PgService.js:95:16)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+<<<<<<<<<<<<<<<<<<<<<<<<<< Synchronizer Error >>>>>>>>>>>>>>>>>>>>>
+TypeError: "callback" argument must be a function
+    at setTimeout (timers.js:450:11)
+    at Timeout.handleDisconnect [as _onTimeout] (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/app/persistence/postgreSQL/PgService.js:112:5)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing client processor >>>>>>>>>>>>>>>>>>>>>
+Received kill signal, shutting down gracefully
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing explorer  >>>>>>>>>>>>>>>>>>>>>
+Closed out connections
+false 'ssl-certs' '/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/ssl-certs'
+******* Initialization started for hyperledger fabric platform ******, { 'first-network': 
+   { name: 'first-network',
+     profile: './connection-profile/first-network.json',
+     enableAuthentication: false } }
+ client_configs.name  first-network  client_configs.profile  ./connection-profile/first-network.json
+FabricUtils.createFabricClient 
+config.client.tlsEnable  true
+FabricConfig, this.config.channels  mychannel
+An identity for the admin user: admin already exists in the wallet
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+Channel genesis hash for channel [mychannel] >> a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47
+FabricUtils.createDetachClient 
+
+
+Please open web browser to access ：http://localhost:8080/
+
+
+pid is 3394
+
+
+
+Sync process is started for the network : [first-network] and client : [first-network]
+config.client.tlsEnable  true
+FabricConfig, this.config.channels  mychannel
+(node:3539) DeprecationWarning: grpc.load: Use the @grpc/proto-loader module with grpc.loadPackageDefinition instead
+An identity for the admin user: admin already exists in the wallet
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+Channel genesis hash for channel [mychannel] >> a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47
+SyncServices.synchNetworkConfigToDB client  first-network  channel_name  mychannel
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050
+
+
+Synchronizer pid is 3539
+
+
+saveTransaction  true
+block_row.blocknum  3
+status  true
+saveTransaction  true
+block_row.blocknum  0
+status  true
+saveTransaction  true
+block_row.blocknum  1
+status  true
+saveTransaction  true
+block_row.blocknum  2
+status  true
+initializeChannelFromDiscover  mychannel
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050
+initializeChannelFromDiscover  mychannel
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050
+initializeChannelFromDiscover  mychannel
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+SyncPlatform initialize()-- @  Wed Aug 21 2019
+
+Sync process is started for the network : [first-network] and client : [first-network]
+config.client.tlsEnable  true
+FabricConfig, this.config.channels  mychannel
+An identity for the admin user: admin already exists in the wallet
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+Channel genesis hash for channel [mychannel] >> a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47
+SyncServices.synchNetworkConfigToDB client  first-network  channel_name  mychannel
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050
+SyncPlatform initialize()-- @  Wed Aug 21 2019
+
+Sync process is started for the network : [first-network] and client : [first-network]
+config.client.tlsEnable  true
+FabricConfig, this.config.channels  mychannel
+An identity for the admin user: admin already exists in the wallet
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+Channel genesis hash for channel [mychannel] >> a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47
+SyncServices.synchNetworkConfigToDB client  first-network  channel_name  mychannel
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050
+initializeChannelFromDiscover  mychannel
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+saveTransaction  true
+block_row.blocknum  4
+status  true
+Broadcast >> {"title":"Block 4 added to Channel: mychannel","type":"block","message":"Block 4 established with 1 tx","time":"2019-08-21T09:09:15.364Z","txcount":1,"datahash":"07c5be23abecc31a0e9a43ddf8b6da1ccbabaa3688114d908f66fff292203d73"}
+initializeChannelFromDiscover  mychannel
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+SyncPlatform initialize()-- @  Wed Aug 21 2019
+
+Sync process is started for the network : [first-network] and client : [first-network]
+config.client.tlsEnable  true
+FabricConfig, this.config.channels  mychannel
+An identity for the admin user: admin already exists in the wallet
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+Channel genesis hash for channel [mychannel] >> a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47
+SyncServices.synchNetworkConfigToDB client  first-network  channel_name  mychannel
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050
+SyncPlatform initialize()-- @  Wed Aug 21 2019
+
+Sync process is started for the network : [first-network] and client : [first-network]
+config.client.tlsEnable  true
+FabricConfig, this.config.channels  mychannel
+An identity for the admin user: admin already exists in the wallet
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+Channel genesis hash for channel [mychannel] >> a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47
+SyncServices.synchNetworkConfigToDB client  first-network  channel_name  mychannel
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050
+req.body { user: 'sanket_pai',
+  password: '123456',
+  network: 'first-network' }
+Network: first-network enableAuthentication false
+initializeChannelFromDiscover  mychannel
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+SyncPlatform initialize()-- @  Wed Aug 21 2019
+
+Sync process is started for the network : [first-network] and client : [first-network]
+config.client.tlsEnable  true
+FabricConfig, this.config.channels  mychannel
+An identity for the admin user: admin already exists in the wallet
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+Channel genesis hash for channel [mychannel] >> a3904407610650e0a680e7b92058bbb46362980a59f542e58dc9ff06bfe3bc47
+SyncServices.synchNetworkConfigToDB client  first-network  channel_name  mychannel
+initializeChannelFromDiscover  mychannel
+ FabricClient.discover_results  endpoint  { host: 'orderer.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer2.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer3.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer4.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050 
+
+ FabricClient.discover_results  endpoint  { host: 'orderer5.example.com', port: 7050 }
+
+initializeChannelFromDiscover.discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050 
+
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer2.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer3.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer4.example.com:7050
+insertNewOrderers discoveryProtocol  grpcs  requesturl  grpcs://orderer5.example.com:7050
+Received kill signal, shutting down gracefully
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing explorer  >>>>>>>>>>>>>>>>>>>>>
+Closed out connections
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing client processor >>>>>>>>>>>>>>>>>>>>>
+Error: ChannelEventHub has been shutdown
+    at ChannelEventHub.disconnect (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/node_modules/fabric-network/node_modules/fabric-client/lib/ChannelEventHub.js:601:21)
+    at FabricEvent.disconnectChannelEventHub (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/app/platform/fabric/sync/FabricEvent.js:141:19)
+    at FabricEvent.disconnectEventHubs (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/app/platform/fabric/sync/FabricEvent.js:159:10)
+    at SyncPlatform.destroy (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/app/platform/fabric/sync/SyncPlatform.js:198:18)
+    at Synchronizer.close (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/app/Synchronizer.js:84:18)
+    at process.shutDown (/home/sanket/Desktop/Explorer-Ciibadge/blockchain-explorer/sync.js:37:16)
+    at emitOne (events.js:116:13)
+    at process.emit (events.js:211:7)
+    at Signal.wrap.onsignal (internal/process.js:197:44)
